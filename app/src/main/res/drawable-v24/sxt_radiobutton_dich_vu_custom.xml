@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:state_pressed="true"
+            android:drawable="@drawable/ic_baseline_check_circle_24">
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/white"/>
+
+            <corners
+                android:radius="50sp"/>
+        </shape>
+
+    </item>
+    <item android:state_checked="true" android:state_focused="true"
+        android:drawable="@drawable/ic_baseline_check_circle_24">
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/white"/>
+
+            <corners
+                android:radius="50sp"/>
+        </shape>
+
+    </item>
+
+    <item android:state_checked="true"
+        android:drawable="@drawable/ic_baseline_check_circle_24">
+        <shape android:shape="oval">
+            <solid
+                android:color="@color/white"/>
+
+            <corners
+                android:radius="50sp"/>
+        </shape>
+
+    </item>
+
+    <item android:state_checked="false" android:state_pressed="true"
+        android:drawable="@drawable/ic_baseline_radio_button_unchecked_24">
+
+
+    <shape
+            android:shape="oval"
+            >
+            <stroke
+                android:color="@color/dark_blue"
+                android:width="2dp"/>
+            <solid
+                android:color="@color/white"/>
+            <corners
+                android:radius="50sp"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="false" android:state_focused="true"
+        android:drawable="@drawable/ic_baseline_radio_button_unchecked_24">
+
+
+    <shape
+            android:shape="oval"
+            >
+            <stroke
+                android:color="@color/dark_blue"
+                android:width="2dp"/>
+            <solid
+                android:color="@color/white"/>
+            <corners
+                android:radius="50sp"/>
+        </shape>
+    </item>
+
+    <item android:state_checked="false"
+        android:drawable="@drawable/ic_baseline_radio_button_unchecked_24">
+
+        <shape
+            android:shape="oval"
+            >
+            <stroke
+                android:color="@color/dark_blue"
+                android:width="2dp"/>
+            <solid
+                android:color="@color/white"/>
+            <corners
+                android:radius="50sp"/>
+        </shape>
+    </item>
+</selector>

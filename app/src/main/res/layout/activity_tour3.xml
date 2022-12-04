@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tour3"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:paddingRight="5dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_circle_24"
+                />
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_circle_24"
+                android:layout_marginStart="2dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_black_circle_24"
+                android:layout_marginStart="2dp"/>
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_baseline_circle_24"
+                android:layout_marginStart="2dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sản phẩm chất lượng, an toàn cho thú cưng của bạn"
+            android:textSize="30sp"
+            android:paddingTop="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Với lượng đồ ăn và phụ kiện đủ sức phủ phê cho mọi pet, mang đến sự hài lòng cho khách hàng."
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+        <ImageView
+            android:layout_width="336dp"
+            android:layout_height="296dp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="10dp"
+            android:src="@drawable/tour3" />
+
+        <RelativeLayout
+            android:id="@+id/InnerRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txt_Skip"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="#E8EA97"
+                android:text="Skip"
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="6dp"
+                android:textAllCaps="false"
+                android:gravity="center"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                />
+            <Button
+                android:id="@+id/btn_Next"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/white"
+                android:text="Next"
+                android:textColor="@color/black"
+                app:cornerRadius="10dp"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

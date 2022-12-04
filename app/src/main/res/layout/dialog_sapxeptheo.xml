@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center_horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:background="@drawable/bolocbg">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="8dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginLeft="110dp"
+        android:background="@drawable/roundedgreytxt"/>
+    <!--  Sắp xếp theo-->
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:gravity="center_vertical"
+        android:weightSum="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Sắp xếp theo"
+            android:layout_weight="0.8"/>
+        <ImageButton
+            android:id="@+id/imv_SapXepBack"
+            android:scaleType="fitXY"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_close_24"
+            android:background="@color/white"
+            android:layout_weight="0.2"
+            />
+    </LinearLayout>
+    <!--   Radio Button -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_a"
+            android:text="Mới nhất"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:button="@drawable/sxt_radiobutton_custom"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_b"
+            android:text="Bán chạy nhất"
+            android:textSize="20sp"
+            android:button="@drawable/sxt_radiobutton_custom"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+
+            />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_c"
+            android:text="Lượt xem"
+            android:textSize="20sp"
+            android:button="@drawable/sxt_radiobutton_custom"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_d"
+            android:text="Giá thấp nhất"
+            android:button="@drawable/sxt_radiobutton_custom"
+
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+
+            />
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radio_e"
+            android:text="Giá cao nhất"
+            android:button="@drawable/sxt_radiobutton_custom"
+
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutDirection="rtl"
+            />
+    </RadioGroup>
+    <!--    Buttons-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btn_HoanTac"
+            android:text="Hoàn tác "
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:textSize="20sp"
+            android:background="@drawable/dialog_button"
+
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:id="@+id/btn_Xacnhan"
+            android:text="Xác nhận"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/dialog_button"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Input_Payment_Info"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@drawable/bottom_payment_info"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tài khoản"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <EditText
+        android:id="@+id/edt_account_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên tài khoản"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/edt_account_numb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Số tài khoản"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_month_year"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="MM/YY"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="5"/>
+        <EditText
+            android:id="@+id/edt_cvv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:hint="CVV"
+            android:padding="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="15dp"
+            android:layout_weight="5"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:textColor="#123c69"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btnThemMoi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm mới"
+        android:textColor="#ffffff"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#123c69"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xác thực"
+        android:textSize="30sp"
+        android:paddingTop="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điền mã xác thực gồm 6 chữ số được gửi đến số điện thoại của bạn."
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="0"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_border"
+            android:gravity="center"
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="5"
+            android:layout_marginStart="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_border"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="1"
+            android:layout_marginStart="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_border"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="2"
+            android:layout_marginStart="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_border"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="2"
+            android:layout_marginStart="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_border"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:hint="2"
+            android:layout_marginStart="5dp"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:background="@drawable/input_border"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ConfirmPhone"
+        android:layout_width="370dp"
+        android:layout_height="60dp"
+        android:text="Xác nhận"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:textSize="21sp"
+        android:layout_gravity="center"
+        android:backgroundTint="#123C69"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn không nhận được mã xác thực?"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Gửi lại"
+            android:textSize="15sp"
+            android:textColor="@color/primary_color"/>
+
+    </LinearLayout>
+
+</LinearLayout>

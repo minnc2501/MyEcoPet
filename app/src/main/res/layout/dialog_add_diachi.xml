@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:background="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_marginStart="24dp" />
+
+            <TextView
+                android:id="@+id/txtHeaderGioHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thêm mới địa chỉ"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#123c69"
+                android:gravity="center_horizontal"
+                android:layout_marginEnd="24dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/edt_HoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nguyễn Thị Thanh Thảo"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/edt_DiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="74 Tân Nghĩa, Di Linh, Lâm Đồng"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/edt_SDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="0337902072"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:id="@+id/edt_Loai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhà riêng"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btn_Luu"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:backgroundTint="#123C69"
+        android:text="LƯU"
+        android:textSize="20sp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
