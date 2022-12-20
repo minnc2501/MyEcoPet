@@ -17,5 +17,6 @@
     <color name="dark_grey">#BAB2B5</color>
     <color name="dark_blue">#123C69</color>
     <color name="dark_pink">#AC3B61</color>
+    <color name="material_dynamic_neutral95">#F0F0F3</color>
 
 </resources>
