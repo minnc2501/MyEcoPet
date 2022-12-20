@@ -31,7 +31,7 @@ public class xemdonhang extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(xemdonhang.this,
-                        MainActivity.class);
+                        Setting_Activity.class);
 
                 startActivity(intent);
             }

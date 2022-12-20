@@ -23,7 +23,6 @@ public class BottomPaymentInfo extends BottomSheetDialogFragment {
         View view = inflater.inflate(R.layout.activity_input_payment_info,container,false);
 
 
-
         return view;
 
 

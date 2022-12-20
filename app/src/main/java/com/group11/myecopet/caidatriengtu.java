@@ -31,7 +31,7 @@ public class caidatriengtu extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(caidatriengtu.this,
-                        chinhsachbaomat.class);
+                        Setting_Activity.class);
 
                 startActivity(intent);
             }
