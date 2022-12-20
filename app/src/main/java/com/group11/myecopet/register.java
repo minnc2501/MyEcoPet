@@ -19,8 +19,6 @@ public class register extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         addEvents();
-
-
     }
 
     private void addEvents() {

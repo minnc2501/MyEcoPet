@@ -3,6 +3,7 @@ package com.group11.myecopet;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -49,6 +50,14 @@ public class DichVuActivity extends AppCompatActivity {
         binding.imvBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(DichVuActivity.this, MainScreen.class);
+                startActivity(intent);
+            }
+        });
+        binding.btnXacnhan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DichVuActivity.this, "Yeah! Đặt lịch thành công, nhớ cùng boss đến đúng giờ nhé!", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(DichVuActivity.this, MainScreen.class);
                 startActivity(intent);
             }

@@ -32,7 +32,7 @@ public class chinhsachbaomat extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(chinhsachbaomat.this,
-                        MainActivity.class);
+                        Setting_Activity.class);
 
                 startActivity(intent);
             }
